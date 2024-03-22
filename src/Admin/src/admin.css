@@ -1,0 +1,206 @@
+.header {
+    background-color: #171717;
+    padding: 1% 2%;
+    text-align: center;
+    color: white;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header p {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0rem auto;
+  }
+  
+  .sideBar {
+    background-color: #808169;
+    width: 15%;
+    height: 100vh;
+  }
+  .main {
+    height: 100vh;
+    background-color: #cccccc;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0%;
+  }
+  .side-nav--diere {
+    background-color: #808169;
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .content-view {
+    width: 80%;
+    margin-top: -2rem;
+    padding: 0rem 2rem;
+  }
+  
+  .agTable {
+    height: 500px;
+    width: 100%;
+  }
+  
+  .sideBarBtn {
+    border: 1px solid black;
+    background-color: gainsboro;
+    padding: 8%;
+    justify-content: center;
+    width: 90%;
+    border-radius: 10px;
+    margin: 4%;
+    margin-bottom: 0%;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  
+  
+  .sideBarBtn:hover {
+    /* transform: scale(1.09); */
+    /* background-color: transparent; */
+  }
+  
+  .headerDiv {
+    height: 3.5rem;
+  }
+  
+  .Button {
+    margin-top: 1rem;
+    height: 2.6rem;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .Button button {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-weight: 500;
+  }
+  
+  .agButton button {
+    margin-top: -10px;
+    padding: 6px 20px;
+  }
+  
+  button {
+    background-color: rgb(128, 129, 105);
+    color: white;
+    border: 2px solid white;
+  }
+  
+  button:hover {
+    background-color: rgb(140, 141, 110);
+    color: white;
+    border: 2px solid white;
+  }
+  
+  .toggelerContainer {
+    display: none;
+    background-color: white;
+    padding-top: 3px;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 8px;
+  }
+  
+  .logoImg{
+    width: 45px;
+      height: 45px;
+      margin-top: 5px;
+  }
+  
+  .spanline {
+    display: block;
+    width: 67%;
+    height: 3px;
+    background-color: black;
+    margin: 5px auto;
+  }
+  
+  .list2 {
+    display: block;
+    width: 20%;
+  }
+  .list {
+    display: block;
+    width: 20% !important;
+  }
+  
+  .logoContainer{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .inputLabel{
+    width: 120px !important;
+  margin-bottom: 10px;
+  }
+  
+  
+  
+  @media screen and (max-width: 600px) {
+  
+    .logoImg{
+      width: 34px;
+        height: 34px;
+        margin-top: 3px;
+    }
+  
+    /* .modal-content{
+    width: 400px !important;
+  } */
+  
+    .list {
+      display: none;
+    }
+    .list2 {
+      display: block;
+    }
+  
+    .toggelerContainer {
+      display: block;
+    }
+  
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left !important;
+      /* text-align: center; */
+    }
+  
+    .side-nav--diere {
+      background-color: #808169;
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+    }
+    .sideBarBtn {
+      padding: 4%;
+      width: 94%;
+      margin: 3%;
+      margin-bottom: 0%;
+    }
+    .content-view {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0rem 0.5rem;
+    }
+  
+    .header p {
+      font-size: 20px;
+      padding: 0.4rem;
+      margin: 0px;
+    }
+  }
+  
