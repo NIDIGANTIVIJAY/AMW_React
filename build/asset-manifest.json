@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f4c62a08.css",
+    "main.js": "/static/js/main.6d3f7687.js",
+    "static/js/703.6982310a.chunk.js": "/static/js/703.6982310a.chunk.js",
+    "static/js/513.63d0e549.chunk.js": "/static/js/513.63d0e549.chunk.js",
+    "static/media/instagram (1).png": "/static/media/instagram (1).79535458a8a6d88f81d4.png",
+    "static/media/whatsapp.png": "/static/media/whatsapp.d026940870fb334920b7.png",
+    "static/media/switch.png": "/static/media/switch.e0a107c62e2fefb17c3f.png",
+    "static/media/twitter.png": "/static/media/twitter.c6e48e60f856cb822273.png",
+    "static/media/google-maps.png": "/static/media/google-maps.d6bf645e442dee577dd4.png",
+    "static/media/facebook.png": "/static/media/facebook.01a470d813915c298403.png",
+    "static/media/receiver.png": "/static/media/receiver.23ca562e865008ad2582.png",
+    "static/media/linkedin.png": "/static/media/linkedin.6892b3ae328c7a1e055f.png",
+    "static/media/placeholder.png": "/static/media/placeholder.f456f800adb56b1a32aa.png",
+    "static/media/nail5.jpg": "/static/media/nail5.f0171869a2a1b299d69c.jpg",
+    "static/media/email.png": "/static/media/email.bd4e2803ab95ddcd4e1b.png",
+    "index.html": "/index.html",
+    "main.f4c62a08.css.map": "/static/css/main.f4c62a08.css.map",
+    "main.6d3f7687.js.map": "/static/js/main.6d3f7687.js.map",
+    "703.6982310a.chunk.js.map": "/static/js/703.6982310a.chunk.js.map",
+    "513.63d0e549.chunk.js.map": "/static/js/513.63d0e549.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4c62a08.css",
+    "static/js/main.6d3f7687.js"
+  ]
+}
