@@ -1,0 +1,166 @@
+.profile {
+  margin: 5rem 0rem 0rem 0rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #fbfbfb;
+  display: block;
+}
+
+.auth {
+  margin: 16rem auto 2rem;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  width: 44rem;
+  /* border-radius: 8px; */
+  padding: 4rem 1rem 1rem;
+  text-align: center;
+  /* background-color: #89d8e3; */
+  /* background-color: rgb(60 0 128 / 80%); */
+  background-color: #273447;
+}
+
+.icon {
+  height: 65px;
+  width: 65px;
+  margin: 25px auto 10px;
+}
+
+.ContHeader {
+  font-size: 50px;
+  /* color: black; */
+  /* color: #e7e7e7; */
+  color: white;
+  font-weight: 600;
+}
+
+.auth1 {
+  position: relative;
+  z-index: 11;
+  margin: 1rem auto -20rem;
+  display: flex;
+  gap: 2.5rem;
+  /* margin-top: 0rem; */
+  /* margin-bottom: -20rem !important; */
+  /* box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2); */
+  width: 60rem;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  /* background-color: #f4f0fa; */
+  overflow: hidden;
+}
+
+.contactBox {
+  width: 20rem;
+  height: 15rem;
+  background-color: white;
+  box-shadow: -4px -6px 8px rgba(0, 0, 0, 0.2);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+.control label {
+  display: block;
+  color: #616161;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  /* margin-top: 0.9rem; */
+}
+
+.control input {
+  display: block;
+  width: 30rem;
+  margin: auto;
+  border-radius: 4px;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  margin: 0.5rem;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: inline;
+  margin-top: 5px !important;
+}
+
+.ContactUsImg {
+  width: 37rem;
+  height: 26.2rem;
+}
+textarea {
+  border: none;
+}
+
+.emailTxt a {
+  color: #007185;
+}
+
+.emailTxt a:hover {
+  color: #c7511f;
+}
+
+.textAreaWidth {
+  width: 30rem;
+  border-radius: 4px;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 1000px) {
+  .auth1 {
+    display: block;
+    width: 34rem;
+  }
+
+  .ContHeader {
+    font-size: 36px;
+  }
+
+  .control input {
+    width: 61%;
+  }
+  .contactBox {
+    margin: 15px auto;
+  }
+
+  .auth {
+    width: 34rem;
+  }
+
+  .contactBox p {
+    margin: 1px 12px;
+  }
+
+  .textAreaWidth {
+    width: 61%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .auth1 {
+    display: block;
+    width: 22rem;
+  }
+  .ContHeader {
+    font-size: 28px;
+  }
+  .contactBox {
+    margin: 15px auto;
+  }
+
+  .auth {
+    width: 22rem;
+  }
+
+  .control input {
+    width: 100%;
+  }
+
+  .textAreaWidth {
+    width: 100%;
+  }
+}

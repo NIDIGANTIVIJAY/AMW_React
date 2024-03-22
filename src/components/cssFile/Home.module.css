@@ -1,0 +1,25 @@
+.home1 {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f4f0fa;
+  position: relative;
+  top: 98px;
+  color: rgb(114, 108, 108);
+  margin-bottom: 5rem;
+}
+
+
+.buttonClass{
+ 
+    margin-left: 87%;
+  
+}
+
+.home {
+box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+background-color: #f4f0fa;
+position: relative;
+top: 80px;
+color: rgb(114, 108, 108);
+margin-bottom: 0rem;
+
+}

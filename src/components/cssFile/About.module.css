@@ -1,0 +1,63 @@
+.aboutProfile {
+  margin: 5rem 0rem 0rem 0rem;
+  /* box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2); */
+  /* width: 40rem; */
+  /* border-radius: 8px; */
+  padding: 1rem;
+  text-align: left;
+  background-color: #f4f0fa;
+  text-align: justify;
+}
+
+.aboutContainer{
+  margin: 2rem;
+}
+
+.textBold {
+  font-weight: bold;
+  color: rgb(74, 72, 72);
+}
+.copanyFact{
+margin-top: 1rem;
+}
+
+.aboutHeader {
+  font-size: 20px !important;
+    font-weight: bold;
+    border-bottom: 2px solid;
+    display: inline;
+    padding: 0px 4px;
+    color: #13244f !important;
+}
+
+@media screen and (max-width : 1000px) {
+  .aboutContainer{
+    margin: 1rem;
+  }
+  
+}
+
+@media screen and (max-width : 800px) {
+  .aboutContainer{
+    margin: 0.5rem;
+  }
+
+  .aboutContainer p {
+    font-size: 15px;
+
+  }
+  
+  
+}
+
+
+@media screen and (max-width : 600px) {
+  .aboutContainer{
+    margin: 0rem;
+  }
+
+  .aboutContainer p {
+    font-size: 14px;
+  }
+
+}

@@ -1,0 +1,91 @@
+.profile {
+  margin: 5rem 0rem 0rem 0rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #f4f0fa;
+
+}
+
+.chartContainer{
+  background-color: white;
+
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: 2%;
+  width: 96%;
+  padding: 1px 0px; 
+}
+
+.chart{
+  background-color: white;
+  color: #192136;
+  border-radius: 8px;
+  margin: 2% 1%;
+}
+
+.table{
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: 2%;
+  width: 96%;
+  padding: 20px; 
+}
+
+.table table{
+  border-collapse: collapse;
+width: 100%;
+}
+
+.table td, .table th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+.table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.table .tHead{
+background-color: darkgray;
+color: #f4f0fa;
+}
+
+.chart table{
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.chart td, .chart th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+.chart .tHead{
+background-color: darkgray;
+color: #f4f0fa;
+}
+
+.profile form{
+  margin-top: 20px;
+}
+
+.btnclasstable{
+  padding: 0px;
+    width: 110px;
+    margin-top: 2px;
+    height: 30px;
+
+}
+
+
+.buttonClass{
+ 
+  margin-left: 87%;
+
+}
+
+

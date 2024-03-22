@@ -1,0 +1,161 @@
+.faqContainer {
+  margin: 5rem 0rem 0rem 0rem;
+  padding: 3rem;
+  background-color: #f4f0fa;
+}
+
+.faqWrapper {
+  display: flex;
+  width: 100%;
+  gap: 3%;
+}
+
+.faqTextidv {
+  width: 55%;
+  text-align: justify;
+}
+
+.faqImage {
+  width: 42%;
+}
+
+.faqImage img {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #13244f;
+}
+
+table th,
+table td {
+  padding: 3px 20px;
+}
+
+  table tr td{
+    color: #13244f !important;
+  }
+
+  
+table tbody tr{
+  border-top: 2px solid #13244f;
+  border-bottom: 2px solid #13244f;
+  height: 70px;
+}
+table tbody tr:first-child{
+  border-top: none;
+}
+table thead tr{
+  background-color: #13244f;
+  color: white;
+  text-transform: uppercase;
+  height: 70px;
+
+}
+.headingText{
+  display: inline;
+  padding: 3rem 0rem 0rem;
+  border-bottom: 2px solid black;
+}
+
+.tableWrapper{
+  width: 100%;
+  display: flex;
+  gap: 40px;
+}
+
+.tablecontainer1{
+  width: 60%;
+}
+
+.tablecontainer2{
+  width: 40%;
+}
+.tableBox1, .tableBox2{
+ width: 100%;
+  border: 2px solid #13244f;
+}
+
+.terminologyText{
+  text-align: justify;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .faqContainer {
+    padding: 01.5rem;
+    font-size: 15px;
+  }
+  .tableWrapper{
+    display: block;
+  }
+
+  .tablecontainer1, .tablecontainer2{
+    width: 100%;
+  }
+
+  .tableBox2{
+    margin-top: 30px;
+  }
+
+  .headingText{
+    font-size: 20px;
+  }
+
+  .faqWrapper {
+    display: block;
+  }
+
+  .faqTextidv {
+    width: 100%;
+  }
+
+  .faqImage {
+    width: 100%;
+  }
+
+  .faqImage img {
+    height: 340px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .tableContainerNew{
+    overflow-x: auto;
+  }
+
+  .tablecontainer1{
+    overflow-x: auto;
+  }
+
+  .faqImage img {
+    height: 290px;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+
+  .faqContainer {
+    padding: 01rem;
+    font-size: 14px;
+  }
+
+  .headingText{
+    font-size: 18px;
+  }
+
+  .faqTextidv {
+    width: 100%;
+  }
+
+  .faqImage img {
+    height: 240px;
+  }
+}

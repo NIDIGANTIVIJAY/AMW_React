@@ -1,0 +1,235 @@
+.product {
+  width: 100%;
+  text-align: left;
+  background-color: #f4f0fa;
+}
+
+.homeproductCard {
+  margin-top: 16px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-radius: 8px;
+  /* padding: 1rem; */
+  text-align: left;
+  background-color: #f4f0fa;
+}
+
+.homeproductBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeproductBoximg {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  margin-right: 1rem;
+  padding: 1rem;
+  width: 48.5%;
+}
+
+.homeproductBoximg img{
+  width: 100%;
+  height: 296px;
+}
+
+.homeproductBoxdetail {
+  padding: 1rem;
+  width: 50%;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.homeproductBoxDescription {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.2rem;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.homeproductBoxDescription p {
+  margin-top: 0px;
+  text-align: justify;
+  font-size: 18px;
+  color: black;
+}
+
+.homebtnContainer{
+  display: flex;
+  gap: 20px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px 18px;
+  padding: 0px 13px 14px 13px;
+}
+
+.gridItem {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.homeproductBoxdetail h2 {
+  margin: 0px 0px 4px 0px;
+  color: #21201d;
+  padding: 0px;
+  font-size: 20px;
+}
+
+.homeproductBoxdetail table {
+  width: 100%;
+}
+
+.homeproductBoxdetail table td {
+  color: brown;
+}
+
+.btn {
+  justify-content: center;
+  background-color: #ffa600;
+  border: #ffa600;
+  margin: 0px auto;
+  display: block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+}
+
+.btn:hover {
+  background-color: rgba(255, 166, 0, 90%);
+  border: #ffa600;
+}
+
+.btnDiv{
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.btnDiv a{
+  text-decoration: none;
+
+}
+
+.tableContainer{
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid gray;
+  margin: 20px 0% 0px;
+}
+
+.admTable{
+  border-collapse: collapse;
+  border-radius: 8px;
+  width: 100%;
+  text-align: left;
+}
+.admtr{
+  border: 2px solid gray;
+}
+.admth, .admtd{
+  padding: 2px 7px;;
+  border: 2px solid gray;
+}
+
+.btn1{
+  margin: 0.5rem;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: inline;
+    margin-top: 5px !important;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+  
+.gridItem {
+  border: 2px solid darkgrey;
+}
+
+  .gridContainer {
+    display: block;
+  }
+
+  .homeproductCard {
+    padding: 0px;
+  }
+
+  .homeproductBoxDescription p{
+    font-size: 16px;
+  }
+
+  .homeproductBoxdetail h2 {
+    margin: 0px 0px -12px 0px;
+    font-size: 18px;
+}
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .homeproductBox {
+    display: block;
+  }
+  
+  .homeproductBoximg, .homeproductBoxdetail {
+    width: 100%;
+  }
+  .homeproductBoxdetail {
+   /* margin-top: 2%; */
+  }
+
+  .homeproductBoxDescription p{
+    font-size: 15px;
+  }
+
+  .homeproductBoxdetail h2 {
+    font-size: 17px;
+}
+
+.homebtnContainer{
+  
+  justify-content: center;
+  font-size: 14px;
+}
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .gridContainer {
+    padding: 10px;
+  }
+
+  .homeproductCard {
+    margin-top: 10px;
+  }
+
+  .homeproductBoxDescription{
+    margin-top: 0rem;
+  }
+
+  .homeproductBoximg{
+    height: 222px;
+  }
+  .homeproductBoximg img{
+    height: 190px;
+  }
+
+  .homeproductBoxDescription p{
+    font-size: 14px;
+  }
+
+  .homeproductBoxdetail h2 {
+    font-size: 16px;
+}
+
+.gridItem{
+  padding: 0px;
+}
+}

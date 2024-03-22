@@ -1,0 +1,53 @@
+.profile {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f4f0fa;
+    background-color: #b9b7bd;
+    background-color: #232F3E;
+
+    
+
+  }
+  .headerCont{
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    line-height: 0.7;
+  }
+
+  .footerLink a{
+    color:#007185;
+    color:#DDD;
+    text-decoration: none;
+  }
+
+  .footerLink a:hover{
+    color:#C7511F;
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .headerCont{
+      font-size: 16px;
+    }
+  }
+  
+
+  @media screen and (max-width: 800px) {
+    .headerCont{
+      font-size: 14px;
+      display: block;
+    }
+    .footerSepration{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .headerCont{
+      font-size: 12px;
+    }
+  }

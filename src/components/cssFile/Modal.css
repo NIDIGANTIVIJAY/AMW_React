@@ -1,0 +1,59 @@
+.modal-footer {
+    justify-content: left;
+    padding-left: 2rem;
+
+}
+.bodyContainer{
+    font-size: 19px;
+    padding-left: 1rem;
+}
+
+.mobInput{
+    border: 2px solid #b3a2af;
+    padding: 3px 13px;
+    width: 96%;
+    border-radius: 8px;
+}
+
+.textAreaWidth{
+    border: 2px solid #b3a2af;
+    padding: 3px 13px;
+    width: 96%;
+    border-radius: 8px;
+}
+
+p1{
+    color: #292626;
+    font-size: 24px;
+    text-shadow: 1px 1px #a5afa8;
+    padding-left: 1rem;
+}
+
+
+
+
+
+.bodyContainer textarea{
+    border: 2px solid #b3a2af;
+    border-radius: 8px;
+    padding: 3px 13px;
+}
+.note{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+    p1{
+        font-size: 17px;
+        font-weight: 500;
+        text-shadow: 0.2px 0.5px #a5afa8;
+    }
+
+    .mobileTxt{
+        font-size: 17px;
+    }
+
+    .note{
+        font-size: 13px;
+    }
+}
