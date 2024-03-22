@@ -1,0 +1,321 @@
+[
+    {
+    "ShanksDia":[
+{
+    "part": "Heads",
+    "type":"Flat Counter-Sink",
+    "abbr":"Cs",
+    "remarks":"For nail concealment, light construction, flooring, and interior trim ",
+    "imageId": "1"
+},
+{
+    "part": "",
+    "type":"Gypsum Wallboard",
+    "abbr":"Dw",
+    "remarks":"For gypsum wallboard",
+    "imageId": "2"
+},
+{
+    "part": "",
+    "type":"Finishing",
+    "abbr":"Bd",
+    "remarks":"For nail concealment; cabinet-work, furniture",
+    "imageId": "3"
+},
+{
+    "part": "",
+    "type":"Flat",
+    "abbr":"F",
+    "remarks":"For general construction",
+    "imageId": "4"
+},
+{
+    "part": "",
+    "type":"Large flat",
+    "abbr":"Lf",
+    "remarks":"For tear resistance; roofing paper",
+    "imageId": "5"
+},
+{
+    "part": "Shanks",
+    "type":"Smooth",
+    "abbr":"C",
+    "remarks":"For normal holding power; temporary fastening",
+    "imageId": "6"
+},
+{
+    "part": "",
+    "type":"Spiral or Helical",
+    "abbr":"S",
+    "remarks":"For greater holding power; permanent fastening",
+    "imageId": "7"
+},
+{
+    "part": "",
+    "type":"Ringed",
+    "abbr":"R",
+    "remarks":"For highest holding power; permanent fastening",
+    "imageId": "8"
+},
+{
+    "part": "Points",
+    "type":"Diamond",
+    "abbr":"D",
+    "remarks":"For general use, 35 angle; length about 1.5 x diameter",
+    "imageId": "9"
+},
+{
+    "part": "",
+    "type":"Blunt Diamond",
+    "abbr":"Bt",
+    "remarks":"For harder wood species to reduce splitting, 45 angle",
+    "imageId": "10"
+},
+{
+    "part": "",
+    "type":"Long Diamond",
+    "abbr":"N",
+    "remarks":"For fast driving, 250 angle; may tend to split harder species",
+    "imageId": "11"
+},
+{
+    "part": "",
+    "type":"Duckbill",
+    "abbr":"dH",
+    "remarks":"For ease of clinchings",
+    "imageId": "12"
+},
+{
+    "part": "",
+    "type":"Conical",
+    "abbr":"Con",
+    "remarks":"For use in masonry; penetrates better than diamond",
+    "imageId": "13"
+}
+    ]
+},
+{"BWGSWG":[
+    
+    {
+        "BWG":"6 BWG",
+        "INCHES1":"0.203",
+        "MM1":"5.16",
+        "SWG":"6 SWG",
+        "INCHES2":"0.192",
+        "MM2":"4.88"
+    },{
+        "BWG":"7 BWG",
+        "INCHES1":"0.180",
+        "MM1":"4.57",
+        "SWG":"7 SWG",
+        "INCHES2":"0.176",
+        "MM2":"4.47"
+    },{
+        "BWG":"8 BWG",
+        "INCHES1":"0.165",
+        "MM1":"4.19",
+        "SWG":"8 SWG",
+        "INCHES2":"0.160",
+        "MM2":"4.06"
+    },{
+        "BWG":"9 BWG",
+        "INCHES1":"0.148",
+        "MM1":"3.76",
+        "SWG":"9 SWG",
+        "INCHES2":"0.144",
+        "MM2":"3.66"
+    },{
+        "BWG":"10 BWG",
+        "INCHES1":"0.134",
+        "MM1":"3.40",
+        "SWG":"10 SWG",
+        "INCHES2":"0.128",
+        "MM2":"3.25"
+    },{
+        "BWG":"11 BWG",
+        "INCHES1":"0.120",
+        "MM1":"3.05",
+        "SWG":"11 SWG",
+        "INCHES2":"0.116",
+        "MM2":"2.95"
+    },{
+        "BWG":"12 BWG",
+        "INCHES1":"0.109",
+        "MM1":"2.77",
+        "SWG":"12 SWG",
+        "INCHES2":"0.104",
+        "MM2":"2.64"
+    },{
+        "BWG":"13 BWG",
+        "INCHES1":"0.095",
+        "MM1":"2.41",
+        "SWG":"13 SWG",
+        "INCHES2":"0.092",
+        "MM2":"2.34"
+    },{
+        "BWG":"14 BWG",
+        "INCHES1":"0.083",
+        "MM1":"2.11",
+        "SWG":"14 SWG",
+        "INCHES2":"0.080",
+        "MM2":"2.03"
+    },{
+        "BWG":"15 BWG",
+        "INCHES1":"0.072",
+        "MM1":"1.83",
+        "SWG":"15 SWG",
+        "INCHES2":"0.072",
+        "MM2":"1.83"
+    },{
+        "BWG":"16 BWG",
+        "INCHES1":"0.065",
+        "MM1":"1.65",
+        "SWG":"16 SWG",
+        "INCHES2":"0.064",
+        "MM2":"1.63"
+    },{
+        "BWG":"17 BWG",
+        "INCHES1":"0.058",
+        "MM1":"1.47",
+        "SWG":"17 SWG",
+        "INCHES2":"0.056",
+        "MM2":"1.42"
+    },{
+        "BWG":"18 BWG",
+        "INCHES1":"0.049",
+        "MM1":"1.24",
+        "SWG":"18 SWG",
+        "INCHES2":"0.048",
+        "MM2":"1.22"
+    },{
+        "BWG":"19 BWG",
+        "INCHES1":"0.0421.07",
+        "MM1":"",
+        "SWG":"19 SWG",
+        "INCHES2":"0.040",
+        "MM2":"1.02"
+    },{
+        "BWG":"20 BWG",
+        "INCHES1":"0.035",
+        "MM1":"0.89",
+        "SWG":"20 SWG",
+        "INCHES2":"0.036",
+        "MM2":"0.91"
+    }
+]},
+{"Length":[
+    
+    {
+        "USA":".75d",
+        "INCHES1":"3/8",
+        "INCHES2":"''",
+        "MM":"9.5"
+    },
+    {
+        "USA":"1d",
+        "INCHES1":"1/2",
+        "INCHES2":"''",
+        "MM":"12.5"
+    },
+    {
+        "USA":"2d",
+        "INCHES1":"1",
+        "INCHES2":"",
+        "MM":"25"
+    },
+    {
+        "USA":"3d",
+        "INCHES1":"1",
+        "INCHES2":"1/4",
+        "MM":"32"
+    },
+    {
+        "USA":"4d",
+        "INCHES1":"1",
+        "INCHES2":"1/2",
+        "MM":"38"
+    },
+    {
+        "USA":"5d",
+        "INCHES1":"1",
+        "INCHES2":"3/4",
+        "MM":"44"
+    },
+    {
+        "USA":"6d",
+        "INCHES1":"2",
+        "INCHES2":"",
+        "MM":"51"
+    },
+    {
+        "USA":"7d",
+        "INCHES1":"2",
+        "INCHES2":"1/4",
+        "MM":"57"
+    },
+    {
+        "USA":"8d",
+        "INCHES1":"2",
+        "INCHES2":"1/2",
+        "MM":"65"
+    },
+    {
+        "USA":"9d",
+        "INCHES1":"2",
+        "INCHES2":"3/4",
+        "MM":"70"
+    },
+    {
+        "USA":"10d",
+        "INCHES1":"3",
+        "INCHES2":"",
+        "MM":"76"
+    },
+    {
+        "USA":"12d",
+        "INCHES1":"3",
+        "INCHES2":"1/4",
+        "MM":"83"
+    },
+    {
+        "USA":"16d",
+        "INCHES1":"3",
+        "INCHES2":"1/2",
+        "MM":"89"
+    },
+    {
+        "USA":"20d",
+        "INCHES1":"4",
+        "INCHES2":"",
+        "MM":"102"
+    },
+    {
+        "USA":"30d",
+        "INCHES1":"4",
+        "INCHES2":"1/2",
+        "MM":"115"
+    },
+    {
+        "USA":"40d",
+        "INCHES1":"5",
+        "INCHES2":"",
+        "MM":"127"
+    },
+    {
+        "USA":"50d",
+        "INCHES1":"5",
+        "INCHES2":"1/2",
+        "MM":"140"
+    },
+    {
+        "USA":"60d",
+        "INCHES1":"6",
+        "INCHES2":"",
+        "MM":"152"
+    }
+]
+}
+
+
+]
+
