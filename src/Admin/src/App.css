@@ -1,0 +1,481 @@
+.header {
+  background-color: #171717; 
+  padding: 1% 2%;
+  text-align: center;
+  color: white;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header p {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0rem auto;
+}
+
+.sideBar {
+  background-color: #808169;
+  width: 15%;
+  height: 100vh;
+}
+.main {
+  height: 100vh;
+  background-color: #cccccc;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0%;
+}
+.side-nav--diere {
+  background-color: #808169;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerBtn{
+  display: flex;
+  justify-content: right;
+  gap: 12px;
+}
+
+.navbar{
+  align-items:unset;
+}
+
+
+.content-view {
+  width: 80%;
+  /* margin-top: -2rem; */
+  padding: 0.5rem 1rem 0rem;
+}
+
+.agTable {
+  height: 500px;
+  width: 100%;
+}
+
+.Ag-gridContainer{
+  height: 450px;
+}
+
+.Ag-productionTable{
+  height: 540px;
+}
+
+.Ag-InvoiceTable{
+  height: 535px;
+}
+
+.sideBarBtn {
+  border: 2px solid black;
+  background-color: gainsboro;
+  padding: 8%;
+  justify-content: center;
+  width: 90%;
+  border-radius: 10px;
+  margin: 4%;
+  margin-bottom: 0%;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sideBarBtn:hover{
+  border: 2px solid #0a0701;
+  background-color: white;
+  /* color: #266a6e; */
+}
+
+.sideBarBtnActive{
+  border: 2px solid #ffa600;
+  background-color: white;
+  color: #ffa600;
+}
+
+.dashboardHeaderWrapper{
+  display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 0px;
+}
+
+.dashboardContentView{
+  width: 100%;
+  height: 76vh;
+  background-color: rgb(255, 255, 255);
+  background-color: #cccccc;
+}
+
+.RowWrapp{
+  display: flex;
+  width: 100%;
+  height: 41vh;
+  /* border: 1px solid; */
+}
+.RowWrapp2{
+  display: flex;
+  width: 100%;
+  height: 41vh;
+  /* border: 1px solid; */
+}
+.BarDiv{
+  width: 70%;
+    border: 2px solid #a19d9d;
+    border-radius: 10px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    margin: 6px;
+}
+.TableDiv{
+  width: 70%;
+  border: 2px solid #a19d9d;
+    border-radius: 10px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    margin: 6px;
+overflow: hidden;
+
+}
+
+.TableDiv .ag-theme-alpine, .TableDiv .agTable{
+height: 100%;
+}
+
+.TableDiv .ag-root-wrapper.ag-layout-normal {
+  height: 100%;
+  
+}
+.pieDiv{
+  width: 30%;
+  border: 2px solid #a19d9d;
+    border-radius: 10px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    margin: 6px;
+
+}
+
+.pieBox{
+  margin-top: 7px;
+}
+.barBox{
+  margin-top: 7px;
+}
+
+.headerDiv {
+  height: 3.5rem;
+}
+.dashboardContentView table tbody tr th, .dashboardContentView table tbody tr td {
+  padding: 3px 10px !important;
+}
+
+.dashboardContentView table tbody tr {
+  border-top: 1px solid #13244f;
+  border-bottom: 1px solid #13244f;
+  
+  height: 40px;
+}
+.c3-tooltip{
+  background-color: white !important;
+  padding: 0px;
+}
+.c3-tooltip tr .name{
+  font-weight: bold;
+}
+
+.pieBox .c3-tooltip tr .value{
+  display: none;
+}
+
+.Button {
+  margin-top: 1rem;
+  height: 2.6rem;
+  display: flex;
+  gap: 10px;
+  justify-content: right;
+}
+
+.dashHeadeH5{
+  margin: 8px 12px 0px;
+  color: darkslategray;
+  text-transform: uppercase;
+  font-size: 1.15rem;
+}
+
+.ButtonFlex{
+  margin-top: -0.4rem;
+
+}
+
+.Button button {
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-weight: 500;
+}
+
+.agButton button {
+  margin-top: -10px;
+  padding: 6px 20px;
+}
+
+.AdBtn {
+  background-color: rgb(128, 129, 105);
+  color: white;
+  border: 2px solid white;
+}
+
+.AdBtn svg, .AdBtn img {
+  margin-top: -24px;
+}
+
+.AdBtn:hover {
+  background-color: rgb(140, 141, 110);
+  color: white;
+  border: 2px solid white;
+}
+
+.toggelerContainer {
+  display: none;
+  background-color: white;
+  padding-top: 3px;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.logoImg{
+  width: 45px;
+    height: 45px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.spanline {
+  display: block;
+  width: 67%;
+  height: 3px;
+  background-color: black;
+  margin: 5px auto;
+}
+
+.list2 {
+  display: block;
+  width: 20%;
+}
+.list {
+  display: block;
+  width: 20% !important;
+}
+
+.logoContainer{
+  display: flex;
+  gap: 10px;
+}
+
+/* .ModalUserCreate .modal-footer{
+  justify-content: right;
+  background-color: #cccccc;
+} */
+.logoutWrapper{
+  display: flex;
+  align-items: center;
+}
+.logoutIcon{
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.updateAmt{
+  padding: 0px 15px;
+
+  
+}
+
+
+/* text{
+  opacity: 1;
+  text-anchor: initial;
+  pointer-events: none;
+  font-size: 12px;
+  font-weight: 700;
+} */
+
+.dueAmtValue{
+  width: 100px;
+  height: 30px;
+  color: green;
+  font-weight: 500;
+}
+
+.ListNameHeader{
+  margin: 10px 0px;
+  font-weight: bold;
+}
+
+.inputHeader{
+  font-weight: bold;
+  /* margin-bottom: 10px; */
+}
+
+.LableDiv{
+  margin: 10px 0px;
+}
+
+.LableDiv label {
+  width: 120px;
+  margin: 6px;
+}
+
+
+.LableDivEdit label {
+  width: 70px;
+  margin: 6px;
+}
+
+.LableDivEdit input {
+  margin-right: 90px;
+}
+
+/* .ModalUserCreate .modal-header{
+  background-color: #cccccc;
+} */
+
+.nav-link {
+  --bs-nav-link-color: black !important;
+  font-weight: 500;
+}
+
+.nav-item button:hover{
+  background-color: rgb(140, 141, 110);
+  color: white;
+}
+
+.HeaderText{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.lableContainer{
+  display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 103px;
+    right: 17px;
+}
+
+.divContainer{
+  display: flex;
+}
+
+.divContainer input{ 
+  width: 125px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.lableContainer input, .lableContainer select{
+  width: 125px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .logoImg{
+    width: 34px;
+      height: 34px;
+      margin-top: 3px;
+  }
+
+  .lableContainer {
+    top: 143px;
+    gap: 5px;
+}
+
+.lableContainer input, .lableContainer select{
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+  .dashboardContentView{
+    height: 122vh;
+  }
+
+  .RowWrapp, .RowWrapp2{
+    display: block;
+  }
+
+  .BarDiv, .TableDiv, .pieDiv{
+    width: 100%;
+    height: 100%;
+  }
+
+  .BarDiv{
+    display: none;
+  }
+
+  .HeaderText{
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+.nav-link {
+  --bs-nav-link-padding-x: 0.7rem;
+  --bs-nav-link-padding-y: 0.4rem;
+}
+
+  .list {
+    display: none;
+  }
+  .list2 {
+    display: block;
+  }
+
+  .toggelerContainer {
+    display: block;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left !important;
+    /* text-align: center; */
+  }
+
+  .side-nav--diere {
+    background-color: #808169;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+  }
+  .sideBarBtn {
+    padding: 4%;
+    width: 94%;
+    margin: 3%;
+    margin-bottom: 0%;
+  }
+  .content-view {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0rem 0.5rem;
+  }
+
+  .header p {
+    font-size: 20px;
+    padding: 0.4rem;
+    margin: 0px;
+  }
+}
+
+
+
+
