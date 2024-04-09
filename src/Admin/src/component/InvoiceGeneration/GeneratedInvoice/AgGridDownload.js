@@ -5,12 +5,15 @@ import html2pdf from 'html2pdf.js';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import axiosInstance from '../../axiosconfig';
+import { ToastContainer, toast } from 'react-toastify';
+import { Tooltip as ReactTooltip } from "react-tooltip";
+
 const AgGridDownload = (props) => {
     // Add your logic here to handle the download action when the icon is clicked
     // console.log(props);
     const url = process.env.REACT_APP_SERVICE_ID
 
-
+    console.log(props,props?.param?.data?._id,"  variant=")
     const handleDownloadClick = () => {
         axiosInstance.post('downloadInvoice', props.param.data).then((res) => {
             if (res.status === 200) {
@@ -28,7 +31,7 @@ const AgGridDownload = (props) => {
                 a.download = `${props.param.data.GSTNumber}.pdf`;
                 document.body.appendChild(a);
                 a.click();
-            
+
                 // Clean up the URL object
                 URL.revokeObjectURL(url);
 
@@ -81,16 +84,14 @@ const AgGridDownload = (props) => {
 
 
 
-                //   });
-
-
-
-
-
-
-
+                toast.success('Invoice Downloaded Sucessfully', {
+                    autoClose: 5000, // Auto close the toast after 3 seconds (3000 milliseconds)
+                });
 
             } else {
+                toast.error(`Unexpected response status:${res.status}`, {
+                    autoClose: 5000, // Auto close the toast after 3 seconds (3000 milliseconds)
+                });
                 console.error('Unexpected response status:', res.status);
             }
 
@@ -101,10 +102,15 @@ const AgGridDownload = (props) => {
 
     return (
         <div>
+         
 
-            <button className='AdBtn' onClick={handleDownloadClick}>
+            <button  className='AdBtn' onClick={handleDownloadClick}>
+
                 <FaDownload />
+
             </button>
+        
+         
         </div>
     );
 };

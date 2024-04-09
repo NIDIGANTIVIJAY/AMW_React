@@ -109,15 +109,15 @@ const Dashboard = () => {
     },
 
     size: {
-      height: 280,
-      width: 800
+      height: 220,
+      width: 550
   },
     color: {
       pattern: ["#1f77b4", "#aec7e8", "#ff7f0e"],
     },
     bar: {
       width: {
-        ratio: 0.5, // this makes bar width 50% of length between ticks
+        ratio: 0.5 // this makes bar width 50% of length between ticks
       },
     },
   });
@@ -164,8 +164,8 @@ const Dashboard = () => {
     },
 
     size: {
-      height: 250,
-      width: 360
+      height: 220,
+      width: 300
   },
 
     color: {
@@ -173,7 +173,7 @@ const Dashboard = () => {
     },
     bar: {
       width: {
-        ratio: 0.5, // this makes bar width 50% of length between ticks
+        ratio: 1, // this makes bar width 50% of length between ticks
       },
     },
   });
@@ -207,8 +207,8 @@ const Dashboard = () => {
 
     },
     size: {
-      height: 250,
-      width: 360
+      height: 200,
+      width: 325
   },
 
     pie: {
@@ -351,7 +351,7 @@ const Dashboard = () => {
 
   return (<>
 
-    <div className="dashboardHeaderWrapper" style={{ display: "flex" }}>
+    <div className="dashboardHeaderWrapper" >
       <div><h3>Dashboard</h3></div>
     </div>
     
@@ -388,7 +388,7 @@ const Dashboard = () => {
         </div>
 
 
-        <div className="pieDiv">
+        <div className="piwBox1">
           <h5 className="dashHeadeH5">Account</h5>
           <div className="pieBox" id="pieChart2"></div>
 

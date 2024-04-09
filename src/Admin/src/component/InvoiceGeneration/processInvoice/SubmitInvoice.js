@@ -25,41 +25,43 @@ const SubmitInvoice = (props) => {
   const formatedArray = useSelector((state) => state.Common.formatedArray)
   const [selectedOption, setSelectedOption] = useState(null)
   const [productName, setproductName] = useState()
-  const [usernameData,setusernameData]=useState()
-  const [userDetails,setuserDetails]=useState()
-  const [vehicalNumber,setVehicalNumber]=useState("")
+  const [usernameData, setusernameData] = useState()
+  const [userDetails, setuserDetails] = useState()
+  const [vehicalNumber, setVehicalNumber] = useState("")
 
   const [showModal, setModal] = useState(false)
-   const dispatch=useDispatch()
-
+  const dispatch = useDispatch()
+  const [editDetails, setEditDetails] = useState(false)
   useEffect(() => {
+    console.log(selectedOption,"KHG")
     axiosInstance.get(url + "username").then((res) => {
 
-      let arr=[]
+      let arr = []
       setusernameData(res.data)
-      res.data.map((i)=>{
+      res.data.map((i) => {
         let obj = { value: '', label: '' }
         obj["value"] = i.email
-        
+
         obj["label"] = i.email
 
         arr.push(obj)
       })
-    
+      setSelectedOption(null)
+
       setproductName(arr)
-    }).catch((e)=>{
+    }).catch((e) => {
       console.log(e)
       toast.error('Something went Wrong', {
         autoClose: 5000, // Auto close the toast after 3 seconds (3000 milliseconds)
       });
       dispatch({
-        type:"SHOWLOADER",
-        payload:false
+        type: "SHOWLOADER",
+        payload: false
       })
 
-  })
+    })
 
-  }, [showModal])
+  }, [showModal,setSelectedOption])
 
 
   console.log(formatedArray, "formatedArray")
@@ -79,79 +81,91 @@ const SubmitInvoice = (props) => {
       "InvoiceProduct": "",
       "AmountPaid": "",
       "DueAmount": "",
-      "vehicalNumber":""
+      "vehicalNumber": ""
 
     }
-   
-    if(selectedOption === null){
+
+    if (selectedOption === null) {
       toast.error('Please Select the Email', {
         autoClose: 5000, // Auto close the toast after 3 seconds (3000 milliseconds)
       });
       return
     }
-    if(vehicalNumber === ""){
+    if (vehicalNumber === "") {
       toast.error('Please Enter Vehical Number', {
         autoClose: 5000, // Auto close the toast after 3 seconds (3000 milliseconds)
       });
-        return
+      return
     }
     dispatch({
-      type:"SHOWLOADER",
-      payload:true
+      type: "SHOWLOADER",
+      payload: true
     })
     payloadData["productIdArr"] = processDataArra
 
     payloadData["Name"] = userDetails[0].username
 
     payloadData["GSTNumber"] = userDetails[0].GstNumber
-    payloadData["address"]= userDetails[0].address
-    payloadData["phonenumber"]= userDetails[0].phonenumber
+    payloadData["address"] = userDetails[0].address
+    payloadData["phonenumber"] = userDetails[0].phonenumber
     payloadData["InvoiceProduct"] = formatedArray
-    payloadData["vehicalNumber"]=vehicalNumber
-    
-    axiosInstance.post( "savequoteData", payloadData).then((res) => {
+    payloadData["vehicalNumber"] = vehicalNumber
+
+    axiosInstance.post("savequoteData", payloadData).then((res) => {
       console.log(res)
-      if(res.status === 200){
+      if (res.status === 200) {
         toast.success('Invoice Created Successfully', {
           autoClose: 5000, // Auto close the toast after 3 seconds (3000 milliseconds)
         });
         dispatch({
-          type:"SHOWLOADER",
-          payload:false
+          type: "SHOWLOADER",
+          payload: false
         })
         props.setShow(false)
         props.setPreview(true)
         props.setInvoiceData(payloadData)
       }
-           
-    }).catch((e)=>{
-        console.log(e)
-        toast.error('Something went Wrong', {
-          autoClose: 5000, // Auto close the toast after 3 seconds (3000 milliseconds)
-        });
-        dispatch({
-          type:"SHOWLOADER",
-          payload:false
-        })
+
+    }).catch((e) => {
+      console.log(e)
+      toast.error('Something went Wrong', {
+        autoClose: 5000, // Auto close the toast after 3 seconds (3000 milliseconds)
+      });
+      dispatch({
+        type: "SHOWLOADER",
+        payload: false
+      })
 
     })
-  
+
 
   }
 
 
-const onChangeFun=(e)=>{
-  console.log(e,usernameData)
-  setSelectedOption(e)
-  const data=usernameData.filter((i)=> i.email === e.value  )
-console.log(data)
-setuserDetails(data)
-}
+  const onChangeFun = (e) => {
+    console.log(e, usernameData)
+    setSelectedOption(e)
+    const data = usernameData.filter((i) => i.email === e.value)
+    console.log(data)
+    setuserDetails(data)
+  }
 
 
 
   const onCloseFun = () => {
     props.setShow(false)
+  }
+
+  const OnClickEditFun = () => {
+    console.log("IN THE EDIT Fun", userDetails)
+    if (userDetails === "" || userDetails === undefined) {
+      toast.error('Please Select The Customer Email Address', {
+        autoClose: 5000, // Auto close the toast after 3 seconds (3000 milliseconds)
+      });
+    } else {
+      setModal(true)
+      setEditDetails(true)
+    }
   }
 
   return (<>
@@ -165,78 +179,79 @@ setuserDetails(data)
       size="xl"
     >
       <Modal.Header closeButton onClick={onCloseFun}>
-      <label className=" inputHeader">Please Slect Name</label>
+        <label className=" inputHeader">Please Slect Customer Email</label>
       </Modal.Header>
       <Modal.Body>
 
-      <div className="Button" style={{ margin: "-0.5rem 0 0.5rem", justifyContent: "right" }}>
-        <button className="AdBtn" type="submit" onClick={() => { setModal(true) }}>Add User</button>
-      </div>
+        <div className="Button" style={{ margin: "-0.5rem 0 0.5rem", justifyContent: "right" }}>
+          <button className="AdBtn" type="submit" onClick={() => { OnClickEditFun() }}>Edit User</button>
+          <button className="AdBtn" type="submit" onClick={() => { setModal(true) }}>Add User</button>
+        </div>
         <label>Email</label>
         <Select
 
           defaultValue={selectedOption}
-          onChange={(e)=>{onChangeFun(e)}}
+          onChange={(e) => { onChangeFun(e) }}
           options={productName}
 
         />
         {/* <input type="text" onChange={(e) => { setName(e.target.value) }} /> */}
 
         {userDetails
-         && userDetails.map((i)=>{
-          
-          return(
-           
-          <div className="LableDiv">
-            <label>Name</label>
-            <input type="text" readOnly={true} value={i.username} />
-            <br></br>
-             
-         
-            <label>GST Number</label>
-      
-           <input type="text" readOnly={true} value={i.GstNumber} />
-           <br></br>
-            <label>Phone Number</label>
-           
-            <input type="tel" readOnly={true} value={i.phonenumber} />
-            <br></br>
-            <label>Address</label>
-           
-            <input type="text" readOnly={true} value={i.address} />
-            <br></br>
-            <label>Pin Code</label>
-      
-            <input type="text" readOnly={true} value={i.city} />
-            
-            <br></br>
-         
-            </div>
+          && userDetails.map((i) => {
 
-            
-          
-          )
-         
+            return (
 
-        })
+              <div className="LableDiv">
+                <label>Name</label>
+                <input type="text" readOnly={true} value={i.username} />
+                <br></br>
 
-      }
-        
-         
 
-        
+                <label>GST Number</label>
 
-          {userDetails && userDetails.length > 0 &&  
+                <input type="text" readOnly={true} value={i.GstNumber} />
+                <br></br>
+                <label>Phone Number</label>
+
+                <input type="tel" readOnly={true} value={i.phonenumber} />
+                <br></br>
+                <label>Address</label>
+
+                <input type="text" readOnly={true} value={i.address} />
+                <br></br>
+                <label>Pin Code</label>
+
+                <input type="text" readOnly={true} value={i.city} />
+
+                <br></br>
+
+              </div>
+
+
+
+            )
+
+
+          })
+
+        }
+
+
+
+
+
+        {userDetails && userDetails.length > 0 &&
           <>
-          <div className="LableDiv">
-          
-          <label>Vehical Number</label>
-            <input type="text" onChange={(e)=>{setVehicalNumber(e.target.value) }} />
-          
-          </div>
-            </>
-            
-            }
+            <div className="LableDiv">
+
+              <label>Vehical Number</label>
+              <input type="text" onChange={(e) => { setVehicalNumber(e.target.value) }} />
+
+            </div>
+          </>
+
+        }
 
         {/* <label className="inputLabel">Enter GST</label>
         <input type="text" onChange={(e) => { setGstNum(e.target.value) }} /> */}
@@ -247,7 +262,12 @@ setuserDetails(data)
 
     </Modal>
 
-    {showModal && <ModaComponent show={showModal} setShowModal1={setModal} />}
+    {showModal && <ModaComponent show={showModal} setShowModal1={setModal}  
+    editDetails={editDetails} userDetails={userDetails} 
+    prevModelShow={props.setShow}
+    prevModelPreview={props.setPreview}
+    setSelectedOptio={setSelectedOption}
+    setSelectedOption={setSelectedOption}/>}
 
 
 

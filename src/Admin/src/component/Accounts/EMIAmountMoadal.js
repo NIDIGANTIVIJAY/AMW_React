@@ -15,10 +15,10 @@ const EMIAmountModal = (props) => {
         { field: "AmountPaid", width: 150 },
 
     ])
-    console.log(props.rowData,"LKLOLO")
+    console.log(props.rowData, "LKLOLO")
     const onCloseFun = () => {
 
-      
+
         props.setShowModal(false)
 
 
@@ -30,14 +30,16 @@ const EMIAmountModal = (props) => {
             onHide={onCloseFun}
             aria-labelledby="ModalHeader"
             centered
-            size="xl"
+            size="lg"
             className="ModalUserCreate"
         >
-   <Modal.Header closeButton></Modal.Header>
+            <Modal.Header closeButton>
+                <h1>Payment History</h1>
+            </Modal.Header>
             <Modal.Body>
                 <div className="ag-theme-alpine agTable" >
 
-                    <AgGridReact columnDefs={coldef} 
+                    <AgGridReact columnDefs={coldef}
                         gridOptions={true}
                         rowData={props.rowData}
 
