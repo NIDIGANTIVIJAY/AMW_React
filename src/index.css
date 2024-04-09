@@ -35,3 +35,12 @@ button:active {
   width:min-content !important;
   background: transparent !important;
 }
+
+#root{
+  display: block;
+  height: 100%;
+  background-color: #cccccc;
+  padding:0 0 1% 0;
+  
+  
+}
