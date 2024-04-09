@@ -21,9 +21,12 @@ const GenearatedInvoice = () => {
 
     { field: "AmountPaid" , width: 150},
     { field: "DueAmount", width: 150 },
-    { field: "Status", width: 150 },
+    { field: "Status", width: 150  , cellStyle: { color : "green" }  ,
+     tooltipValueGetter: () => "Approved Invoice",},
     {headerName:"Action", width: 120,
-  
+      tooltipValueGetter: () => "click here to download",
+      headerTooltip: "Download Invoice",
+   
     cellRenderer:(param)=>< DownloadCellRenderer param={param}/>,}
    
 

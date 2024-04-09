@@ -22,7 +22,7 @@
   height: 100vh;
 }
 .main {
-  height: 100vh;
+  height: 100%;
   background-color: #cccccc;
 }
 .navbar {
@@ -33,9 +33,10 @@
 .side-nav--diere {
   background-color: #808169;
   width: 100%;
-  height: 100vh;
+  height: 111%;
   display: flex;
   flex-direction: column;
+  gap:6%
 }
 
 .footerBtn{
@@ -99,18 +100,20 @@
 }
 
 .dashboardHeaderWrapper{
-  display: flex;
-    justify-content: space-between;
-    margin: 0px 0px 0px;
+     /* display: flex; */
+    /* justify-content: space-between; */
+    /* margin: 0px 0px 0px; */
+   
 }
 
 .dashboardContentView{
-  width: 100%;
-  height: 76vh;
-  background-color: rgb(255, 255, 255);
-  background-color: #cccccc;
+    width: 100%;
+    height: 100%;
+  /* height: 76vh; */
+  /* background-color: rgb(255, 255, 255);
+  background-color: #cccccc; */
 }
-
+  
 .RowWrapp{
   display: flex;
   width: 100%;
@@ -124,11 +127,12 @@
   /* border: 1px solid; */
 }
 .BarDiv{
-  width: 70%;
+  width: 67%;
     border: 2px solid #a19d9d;
     border-radius: 10px;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-    margin: 6px;
+    /* margin: -2px; */
+    height: 100%;
 }
 .TableDiv{
   width: 70%;
@@ -137,6 +141,7 @@
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
     margin: 6px;
 overflow: hidden;
+height: 118%;
 
 }
 
@@ -149,12 +154,22 @@ height: 100%;
   
 }
 .pieDiv{
-  width: 30%;
+  width: 31%;
   border: 2px solid #a19d9d;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  /* margin: 6px; */
+  height: 101%;
+  margin-left: 2%;
+
+}
+.piwBox1{
+     width: 33%;
+    border: 2px solid #a19d9d;
     border-radius: 10px;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-    margin: 6px;
-
+    margin-top: 1%;
+    height: 114%;
 }
 
 .pieBox{
@@ -392,6 +407,9 @@ height: 100%;
       height: 34px;
       margin-top: 3px;
   }
+  .ADDCustomImg{
+    display: none;
+  }
 
   .lableContainer {
     top: 143px;
@@ -410,11 +428,17 @@ height: 100%;
 
   .RowWrapp, .RowWrapp2{
     display: block;
+    
   }
 
-  .BarDiv, .TableDiv, .pieDiv{
+  .BarDiv, .TableDiv{
     width: 100%;
     height: 100%;
+  }
+  .pieDiv{
+    width: 100%;
+    height: 111%;
+
   }
 
   .BarDiv{
@@ -449,6 +473,17 @@ height: 100%;
     text-align: left !important;
     /* text-align: center; */
   }
+  .footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+
+  }
+ 
 
   .side-nav--diere {
     background-color: #808169;

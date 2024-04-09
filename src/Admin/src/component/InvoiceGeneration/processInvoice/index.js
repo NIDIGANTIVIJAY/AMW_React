@@ -108,6 +108,11 @@ const onClickRemove =()=>{
           type:"SHOWLOADER",
           payload:false
         })
+        
+        toast.success('Invoice Removed Sucessfully', {
+          autoClose: 5000, // Auto close the toast after 3 seconds (3000 milliseconds)
+      });
+
       }
   })
 }
