@@ -4,7 +4,8 @@
     padding: 1rem;
     text-align: center;
     background-color: #f4f0fa;
-  display: flex;
+    display: flex;
+    width: 50%;
   }
 
   .auth {
@@ -23,7 +24,7 @@
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
-    background-color: #f4f0fa;
+    background-color:#cccccc87
   }
 
   .auth1 {
@@ -102,6 +103,7 @@
 @media screen and (max-width: 600px) {
   .profile {
     padding: 0rem;
+    margin: 0px;
   }
 }
 
