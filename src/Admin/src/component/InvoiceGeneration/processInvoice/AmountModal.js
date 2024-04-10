@@ -108,6 +108,11 @@ const AmountModal = (props) => {
           autoClose: 5000, // Auto close the toast after 3 seconds (3000 milliseconds)
         });
 
+      }else{
+        toast.error(`${res}`, {
+          autoClose: 5000, // Auto close the toast after 3 seconds (3000 milliseconds)
+        });
+
       }
 
     })

@@ -46,7 +46,6 @@ const SubmitInvoice = (props) => {
 
         arr.push(obj)
       })
-      setSelectedOption(null)
 
       setproductName(arr)
     }).catch((e) => {
@@ -266,8 +265,7 @@ const SubmitInvoice = (props) => {
     editDetails={editDetails} userDetails={userDetails} 
     prevModelShow={props.setShow}
     prevModelPreview={props.setPreview}
-    setSelectedOptio={setSelectedOption}
-    setSelectedOption={setSelectedOption}/>}
+    />}
 
 
 

@@ -140,14 +140,13 @@ const Accounts = () => {
   const [coldef, setcoldef] = useState([
     { field: "Name" , width: 150},
     { field: "GSTNumber", width: 150 },
-    {field:"InvoiceNumber", headerName:"Invoice Number", width: 120},
+    { field: "Status", width: 120 , cellStyle:{color:'orange'}  },
     {field:"InvoiceGeneratedDate",headerName:"Invoice Date", width: 120},
     {field:"vehicalNumber",headerName:"Vehical Number", width: 120},
     { field: "TotalAmount", width: 120 ,cellStyle:{color: "whitesmoke",'background-color': 'rgb(128, 129, 105)'} },
-    { field: "Status", width: 120 , cellStyle:{color:'orange'}  },
+    {field:"InvoiceNumber", headerName:"Invoice Number", width: 120,cellStyle:{color: "whitesmoke",'background-color': 'black'}},
     { field: "AmountPaid", headerName: "Amount Paid", width: 120 , cellStyle:{color:'green'}  },
     { field: "DueAmount", width: 120 ,cellStyle:{color:'red'}  },
-
     { cellRenderer: InputFieldComp, width: 280, headerName: "Balance Amount" },
     {field:"Action",cellRenderer: ActionFun,width:250}
   ]);

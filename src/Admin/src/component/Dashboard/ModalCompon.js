@@ -107,7 +107,6 @@ const ModaComponent = (props) => {
         if (res.status === 200) {
           props.setShowModal1(false)
           props.prevModelShow(false)
-         
           toast.success('Account Updated successfully', {
             autoClose: 5000, // Auto close the toast after 3 seconds (3000 milliseconds)
           });
@@ -145,7 +144,6 @@ const ModaComponent = (props) => {
       if (res.status === 200) {
         props.setShowModal1(false)
         props.prevModelShow(false)
-       
         toast.success('Account Removed successfully', {
           autoClose: 5000, // Auto close the toast after 3 seconds (3000 milliseconds)
         });
